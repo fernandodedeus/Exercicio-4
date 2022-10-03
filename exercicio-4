@@ -1,0 +1,36 @@
+import java.util.Scanner;
+class Main {
+
+      static final float TOTAL_A1 = 30.00f;
+    static final float TOTAL_A2 = 30.00f;
+    static final float TOTAL_A3 = 30.00f;
+  static final float TOTAL_A4 = 30.00f;
+static final byte TOTAL_AVALIACOES = 4;
+
+  public static void main(String[] args) {
+    Scanner console = new Scanner(System.in);
+
+    float a1 = 0.0f;
+    float a2 = 0.0f;
+    float a3 = 0.0f;
+    float a4 = 0.0f;
+    float notafinal = 0.0f;
+    double media = 0.0;
+  
+    System.out.println("A1:  ");
+    a1 = console.nextFloat();
+   System.out.println("A2:  ");
+      a2 = console.nextFloat();
+  System.out.println("A3:  ");
+    a3 = console.nextFloat();
+     System.out.println("A4:  ");
+    a4 = console.nextFloat();
+    
+    notafinal = a1 + a2 + a3 + a4;
+  media = notafinal / TOTAL_AVALIACOES;
+      
+    System.out.println("Nota final = " + notafinal);
+    System.out.println("Media = " + media);
+    
+        }
+    }
